@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perjuangan Mempertahankan Indonesia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .green-box {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+        .content img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .story {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="green-box">
+        <h1>Perjuangan Mempertahankan Indonesia by Nanda</h1>
+    </div>
+    <button onclick="showContent()">Klik untuk Selengkapnya</button>
+    <div id="content" class="content">
+        <h2>Foto dan Cerita Perjuangan Indonesia Melawan Penjajahan Belanda</h2>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Diponegoro.jpg/400px-Diponegoro.jpg" alt="Pangeran Diponegoro">
+        <p><strong>Pangeran Diponegoro (1785-1855):</strong> Tokoh utama Perang Jawa (1825-1830), yang memimpin perlawanan rakyat Jawa melawan kolonialisme Belanda. Perang ini menunjukkan semangat nasionalisme awal dan korban besar untuk kemerdekaan.</p>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Teuku_Umar.jpg/400px-Teuku_Umar.jpg" alt="Teuku Umar">
+        <p><strong>Teuku Umar (1854-1899):</strong> Pahlawan Aceh yang memimpin perlawanan gerilya melawan Belanda selama 40 tahun. Perang Aceh (1873-1904) adalah salah satu konflik terpanjang dan paling berdarah dalam sejarah kolonial Indonesia.</p>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Soekarno_and_Hatta_proclaim_Indonesian_independence.jpg/400px-Soekarno_and_Hatta_proclaim_Indonesian_independence.jpg" alt="Proklamasi Kemerdekaan">
+        <p><strong>Proklamasi Kemerdekaan (1945):</strong> Soekarno dan Hatta memproklamasikan kemerdekaan Indonesia pada 17 Agustus 1945, setelah Jepang menyerah dalam Perang Dunia II. Ini memicu perjuangan bersenjata melawan Belanda yang mencoba kembali menjajah, termasuk Agresi Militer Belanda I dan II (1947-1949).</p>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Indonesian_National_Revolution.jpg/400px-Indonesian_National_Revolution.jpg" alt="Revolusi Nasional Indonesia">
+        <p><strong>Revolusi Nasional Indonesia:</strong> Periode 1945-1949 di mana rakyat Indonesia, dengan dukungan internasional, berhasil mengusir Belanda melalui diplomasi dan perlawanan bersenjata. Konferensi Meja Bundar (1949) akhirnya mengakui kedaulatan Indonesia.</p>
+        
+        <div class="story">
+            <h3>Cerita Singkat</h3>
+            <p>Perjuangan Indonesia melawan penjajahan Belanda dimulai sejak abad ke-19 dengan perlawanan lokal seperti Perang Diponegoro dan Perang Aceh. Pada awal abad ke-20, gerakan nasionalisme tumbuh melalui organisasi seperti Budi Utomo (1908) dan Sarekat Islam. Pendudukan Jepang (1942-1945) mempercepat semangat kemerdekaan. Setelah Proklamasi 1945, Belanda melancarkan agresi militer, tetapi rakyat Indonesia, dengan pemimpin seperti Soekarno, Hatta, dan Sukarno, serta dukungan dari dunia internasional, berhasil mempertahankan kemerdekaan melalui perang gerilya dan diplomasi. Pada 27 Desember 1949, Belanda akhirnya mengakui kedaulatan Republik Indonesia Serikat, yang kemudian menjadi Republik Indonesia.</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent() {
+            const content = document.getElementById('content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
