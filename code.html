@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertama Nanda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+        .small-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="step1">
+        <button id="btn1">anda yakin ingin masuk</button>
+    </div>
+    <div id="step2" class="hidden">
+        <button id="btn2">pencet tombol ini jika anda yakin ingin masuk</button>
+    </div>
+    <div id="step3" class="hidden">
+        <p>ini website pertama ku dan aku sangat bangga sudah berhasil membuatnya. aku membutuhkan waktu untuk meng coding nya</p>
+        <p class="small-text">dibuat oleh nanda</p>
+    </div>
+
+    <script>
+        document.getElementById('btn1').addEventListener('click', function() {
+            document.getElementById('step1').classList.add('hidden');
+            document.getElementById('step2').classList.remove('hidden');
+        });
+
+        document.getElementById('btn2').addEventListener('click', function() {
+            document.getElementById('step2').classList.add('hidden');
+            document.getElementById('step3').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
